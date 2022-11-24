@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:base_ar/base_ar.dart';
+import 'dart:io' show Platform;
 
 void main() {
   runApp(const MyApp());
@@ -55,7 +56,11 @@ class _MyAppState extends State<MyApp> {
               child: ElevatedButton(
             child: const Text("test AR"),
             onPressed: () {
-              _baseAR.show(context);
+              if (Platform.isAndroid) {
+                print("Android belum tersedia cuy");
+              } else if (Platform.isIOS) {
+                _baseAR.show(context);
+              }
             },
           ));
         }),
