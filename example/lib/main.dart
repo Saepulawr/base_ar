@@ -1,4 +1,3 @@
-import 'package:base_ar_example/base64.dart';
 import 'package:flutter/material.dart';
 import 'package:base_ar/base_ar.dart';
 
