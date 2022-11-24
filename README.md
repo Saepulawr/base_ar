@@ -1,15 +1,8 @@
 # base_ar
+Augmented Reality for Flutter
 
-A new Flutter plugin project.
+* Android [Coming soon]
+* IOS (Using <a href=https://pub.dev/packages/arkit_plugin > arkit_plugin </a>)
 
-## Getting Started
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
-
-For help getting started with Flutter development, view the
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/19217330/203818236-c9f68d96-9496-4ed1-8755-5d655419f008.gif)
