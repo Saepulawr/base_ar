@@ -60,7 +60,7 @@ class _BaseARViewState extends State<BaseARView> {
 
       //add ar object by key
       _arObjects.addAll({
-        e.detectionImage.source: e.objectAR,
+        e.detectionImage.source.length.toString(): e.objectAR,
       });
     }
   }
@@ -128,7 +128,7 @@ class _BaseARViewState extends State<BaseARView> {
   Future<void> _buildArObject({
     required ARKitImageAnchor imageAnchor,
   }) async {
-    final key = imageAnchor.referenceImageName ?? "-";
+    final key = imageAnchor.referenceImageName?.length.toString() ?? "-";
     final arObject = _arObjects[key]!;
     final material = ARKitMaterial(
       lightingModelName: ARKitLightingModel.lambert,
